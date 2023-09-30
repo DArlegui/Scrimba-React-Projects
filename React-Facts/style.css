@@ -1,0 +1,103 @@
+/* html {
+  overflow: hidden;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #21222a;
+  height: 90px;
+  padding: 30px 25px; /* 30px up/down 25px left/right */
+}
+
+.nav--logo_text,
+.nav--title {
+  margin: 0;
+}
+
+.nav--logo_text {
+  margin-right: auto;
+  color: #61dafb;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.nav--title {
+  color: #deebf8;
+}
+
+.nav--icon {
+  height: 30px;
+  margin-right: 7px;
+}
+
+.main--title {
+  margin: 0;
+  /* padding-top: 36px; */
+  color: #fefefd;
+  font-size: 44px;
+  letter-spacing: -0.05em;
+}
+
+.contents {
+  background-color: #272e33;
+  min-height: 90vh;
+  max-width: 100vw;
+  /* padding: 56px 27px; */
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Single Logo */
+  /* background-image: url(./images/react-icon-large.png);
+  background-repeat: no-repeat;
+  background-position: right 75%; 
+  background-size: 15rem; 
+  */
+
+  background-image: url(./images/react-icon-large.png), url(./images/react-icon-large-left.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 75%, left 75%; /* right 75% down 75%, left 75% down 75% */
+  background-size: 15rem, 10rem;
+}
+
+ul {
+  /* list-style-type: none; */
+  font-size: 24px;
+  max-width: 680px;
+}
+
+ul > li {
+  padding-block: 10px;
+  color: white;
+}
+
+li::marker {
+  color: #5fdafa;
+  font-size: 1.4rem;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #21222a;
+  color: white;
+  text-align: center;
+}
+
+footer > p {
+  font-size: 16px;
+  color: #deebf8;
+}
