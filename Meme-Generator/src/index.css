@@ -10,3 +10,21 @@ body {
   margin: 0;
   padding: 0;
 }
+
+header {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #224f80 1.18%, #2a40d5 100%);
+}
+
+.header--img {
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 50px;
+}
+
+.header--title {
+  font-size: 1.5rem;
+}
