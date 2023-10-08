@@ -7,7 +7,8 @@ export default function Meme() {
     bottomText: '',
     randomImg: 'http://i.imgflip.com/1bij.jpg',
   });
-  const [allMemeImages, setAllMemeImages] = React.useState(memesData);
+  // const [allMemeImages, setAllMemeImages] = React.useState(memesData);
+  const [allMemeImages] = React.useState(memesData);
 
   function getMemeImage() {
     const memesArray = allMemeImages.data.memes;
@@ -22,8 +23,10 @@ export default function Meme() {
   return (
     <main className="meme">
       <div className="form">
-        <input type="text" placeholder="Top Text" className="form--input" />
-        <input type="text" placeholder="Bottom Text" className="form--input" />
+        <div className="form-row">
+          <input type="text" placeholder="Top Text" className="form--input" />
+          <input type="text" placeholder="Bottom Text" className="form--input" />
+        </div>
         <button className="form--button" onClick={getMemeImage}>
           Get a new meme image 🖼
         </button>
