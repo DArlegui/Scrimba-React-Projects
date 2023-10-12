@@ -6,8 +6,9 @@ export default function Meme() {
     topText: '',
     bottomText: '',
     randomImage: 'http://i.imgflip.com/1bij.jpg',
+    fontSize: 'text-medium', // Added fontSize state
   });
-  // const [allMemeImages, setAllMemeImages] = React.useState(memesData);
+
   const [allMemeImages] = React.useState(memesData);
 
   function getMemeImage() {
@@ -22,10 +23,19 @@ export default function Meme() {
 
   function handleChange(event) {
     const { name, value } = event.target;
-    setMeme((prevMeme) => ({
-      ...prevMeme,
-      [name]: value,
-    }));
+
+    // Check if the change is for the font size
+    if (name === 'changeSize') {
+      setMeme((prevMeme) => ({
+        ...prevMeme,
+        fontSize: value, // Update fontSize based on the selected option
+      }));
+    } else {
+      setMeme((prevMeme) => ({
+        ...prevMeme,
+        [name]: value,
+      }));
+    }
   }
 
   return (
@@ -49,14 +59,28 @@ export default function Meme() {
             onChange={handleChange}
           />
         </div>
-        <button className="form--button" onClick={getMemeImage}>
-          Get a new meme image 🖼
-        </button>
+        <div className="form-row2">
+          <button className="form--button" onClick={getMemeImage}>
+            Get a new meme image
+          </button>
+          <label htmlFor="changeSize">Change Font Size</label>
+          <select
+            id="changeSize" // Updated ID to match htmlFor
+            name="changeSize"
+            value={meme.fontSize} // Set the selected value to fontSize
+            onChange={handleChange}>
+            <option value="text-small">Small (1em)</option>
+            <option value="text-medium">Medium (2em)</option>
+            <option value="text-large">Large (3em)</option>
+          </select>
+        </div>
       </div>
       <div className="meme">
         <img src={meme.randomImage} className="meme--image" />
-        <h2 className="meme--text top">{meme.topText}</h2>
-        <h2 className="meme--text bottom">{meme.bottomText}</h2>
+        <h2 className={`meme--text top ${meme.fontSize}`}>{meme.topText}</h2>
+        <h2 className={`meme--text bottom ${meme.fontSize}`}>
+          {meme.bottomText}
+        </h2>
       </div>
     </main>
   );
