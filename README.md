@@ -30,7 +30,7 @@ This small device screen project, I gained a solid understanding of how to work 
 
 # Meme Generator
 
-### [Live Demo Here](https://lambent-clafoutis-2a6ed0.netlify.app/)
+### [Live Demo Here](https://darlegui-meme-generator.netlify.app/)
 
 ### Description
 
@@ -51,7 +51,7 @@ Meme web application that allows users to create custom memes by adding top and 
 
 # Notes App
 
-### [Live Demo Here](#)
+### [Live Demo Here](https://darlegui-notes-app.netlify.app/)
 
 ### Description
 
@@ -59,14 +59,18 @@ The Notes App is a React-based application for managing and creating notes. It a
 
 ### Features
 
-- Create and manage notes.
-- Edit notes in Markdown format.
-- Organize notes in the sidebar.
-- Responsive layout for a pleasant user experience.
+- Create new notes with a default title.
+- Edit notes in a Markdown editor.
+- Delete unwanted notes.
+- Automatically saves changes in real-time using Firebase.
+- Organize and view notes in a sidebar.
+- Responsive design for various screen sizes.
 
 ### Technologies Used
 
-- React: The frontend of the application is built with React, a popular JavaScript library for building user interfaces.
-- React-Mde: This library is used for the Markdown editor component.
-- Showdown: Showdown is used to convert Markdown content to HTML for preview.
-- Nanoid: This library is used to generate unique IDs for notes.
+- React: A JavaScript library for building user interfaces.
+- ReactMde: A React Markdown editor.
+- Showdown: A JavaScript Markdown to HTML converter.
+- Firebase: A cloud-based platform for building web and mobile apps.
+- React Split: A library for creating resizable split views.
+- CSS: Cascading Style Sheets for styling the app.
