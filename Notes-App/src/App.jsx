@@ -46,6 +46,7 @@ export default function App() {
       }
     }, 250);
     return () => clearTimeout(timeoutId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tempNoteText]);
 
   async function createNewNote() {
