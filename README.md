@@ -2,32 +2,6 @@
 
 ### These are my own rendition of the projects I completed in the [Scrimba React Bootcamp](https://scrimba.com/learn/learnreact).
 
-# ReactFacts
-
-### [Live Demo Here](https://roaring-paletas-09eb19.netlify.app/)
-
-### Description
-
-This is a small React project called "ReactFacts" that displays fun facts about React.It includes a basic project structure, configuration files, and sample components.
-
-### Features
-
-- Demonstration of React components
-- Includes a modern looking navigation bar, main content section, and footer.
-
-# AirBnB Clone
-
-### [Live Demo Here](https://magical-hamster-e60252.netlify.app/)
-
-### Description
-
-This small device screen project, I gained a solid understanding of how to work with React props. This project helped me create more interactive and flexible React components, enhancing my skills in building web applications.
-
-### Features
-
-- The app generates cards for each online experience.
-- Each card displays essential information such as the experience title, price, rating, and location.
-
 # Meme Generator
 
 ### [Live Demo Here](https://darlegui-meme-generator.netlify.app/)
@@ -74,3 +48,50 @@ The Notes App is a React-based application for managing and creating notes. It a
 - Firebase: A cloud-based platform for building web and mobile apps.
 - React Split: A library for creating resizable split views.
 - CSS: Cascading Style Sheets for styling the app.
+
+# Tenzies
+
+### [Live Demo Here](https://stellular-unicorn-ddf95e.netlify.app/)
+
+### Description
+
+Tenzies is a web-based game where the goal is to roll dice until all dice have the same value. You can click each die to freeze it at its current value between rolls. When you achieve "Tenzies," the app displays a fun confetti animation to celebrate your victory!
+
+### Features
+
+- Roll dice to get a random value from 1 to 6.
+- Click on a die to hold it at its current value.
+- Achieve "Tenzies" by holding all dice at the same value.
+- Celebrate your victory with a confetti animation!
+
+### Technologies Used
+
+- React: JavaScript library for building user interfaces.
+- nanoid: Used to generate unique IDs for each die.
+- react-confetti: Adds a fun confetti animation when you achieve "Tenzies."
+
+# ReactFacts
+
+### [Live Demo Here](https://roaring-paletas-09eb19.netlify.app/)
+
+### Description
+
+This is a small React project called "ReactFacts" that displays fun facts about React.It includes a basic project structure, configuration files, and sample components.
+
+### Features
+
+- Demonstration of React components
+- Includes a modern looking navigation bar, main content section, and footer.
+
+# Small AirBnB Clone
+
+### [Live Demo Here](https://magical-hamster-e60252.netlify.app/)
+
+### Description
+
+This small device screen project, I gained a solid understanding of how to work with React props. This project helped me create more interactive and flexible React components, enhancing my skills in building web applications.
+
+### Features
+
+- The app generates cards for each online experience.
+- Each card displays essential information such as the experience title, price, rating, and location.
